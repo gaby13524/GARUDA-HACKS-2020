@@ -1,0 +1,40 @@
+body{
+			padding-top: 70px;
+		}
+		.jumbotron{
+			color: #2c3e50;
+			background-color: #ecf0f1;
+			padding: 1rem 2rem;
+		}
+		.bg-inverse{
+			background-color: #2c3e50;
+		}
+		.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
+			color: white;
+		}
+		.navbar-inverse> button.navbar-toggler{
+			color: white;
+		}
+
+		.navbar-inverse .navbar-nav>li>a.disabled{
+			color: #778899;
+		}
+
+		button.task-groups{/*dis the group header buttons*/
+			width:100%;
+			text-align: left;
+		}
+
+		button.info-buttons{
+			size: 20px;
+			background-color: transparent;
+		}
+
+		div.task-list{
+			max-width: 750px;
+			margin: auto;
+		}
+
+		div.collapse.show>div.task-list{
+			padding: 0.5rem 1rem;
+		}

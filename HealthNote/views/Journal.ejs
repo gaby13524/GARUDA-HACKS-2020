@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Journal</title>
+		<link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<link rel="stylesheet"  type="text/css" href="/stylesheets/app.css">
+	</head>
+	<blog>
+		<div class="ui fixed inverted menu">
+			<div class="ui container">
+				<div class="header item"><i class="code icon"></i>HealthNote</div>
+			</div>
+			<a href="/main" class="item">Home</a>
+			<a href="/new" class="item">New Post</a>
+		</div>
+		
+		<div class="ui vertical menu">
+		  <a class="active teal item">
+			Aug 15, 2020
+		  </a>
+		  <a class="item">
+			Aug 14, 2020
+			</a>
+		</div>
+				
+		<div class="ui main text container segment">
+			<div class="ui huge header">New Note</div>
+			<form class="ui form" action="/blogs" method="POST">
+				<div class="field">
+					<label>Title</label>
+					<input type="text" name="blog[title]" placeholder="Title" required="true">
+				</div>
+				<div class="field">
+					<label>What's up</label>
+					<textarea name="blog[body]" placeholder="Blog post goes here" required="true"></textarea>
+				</div>
+					<input class="ui violet big basic button" type="submit">
+			</form>
+		</div>
+
+	</blog>
+</html>
